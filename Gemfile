@@ -1,7 +1,12 @@
 source 'https://rubygems.org'
 
+gem 'bootstrap-sass', '~> 3.3.4'
+gem "therubyracer"
+gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
+#gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
+#gem "twitter-bootstrap-rails"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.8'
+gem 'rails', '4.1.0'
 # Use postgresql as the database for Active Record
 gem 'pg'
 gem 'rails_12factor', group: :production
