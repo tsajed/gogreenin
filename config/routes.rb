@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   #match 'home' => 'pages#index', :as => :index
   #get 'contact' => 'pages#contact'
   #get 'blog' => 'pages#blog'
-  #get 'about' => 'pages#about'
+  get 'about' => 'pages#about'
   get 'home' => 'pages#index'
 
   root :to => 'pages#index'
