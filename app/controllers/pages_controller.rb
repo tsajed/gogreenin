@@ -10,4 +10,29 @@ class PagesController < ApplicationController
 
   end
 
+  # GET /goals
+  def goals
+
+  end
+
+  # GET /story
+  def story
+
+  end
+
+  # GET /blog
+  def blog
+
+  end
+
+  # GET /news
+  def news
+
+  end
+
+  # GET /news
+  def contact
+
+  end
+
 end

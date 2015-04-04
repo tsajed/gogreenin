@@ -10,8 +10,11 @@ Rails.application.routes.draw do
   ##match 'blog' => 'pages#blog', :as => :blog
   ##match 'about' => 'pages#about', :as => :about
   #match 'home' => 'pages#index', :as => :index
-  #get 'contact' => 'pages#contact'
-  #get 'blog' => 'pages#blog'
+  get 'news' => 'pages#news'
+  get 'contact' => 'pages#contact'
+  get 'blog' => 'pages#blog'
+  get 'story' => 'pages#story'
+  get 'goals' => 'pages#goals'
   get 'about' => 'pages#about'
   get 'home' => 'pages#index'
 
