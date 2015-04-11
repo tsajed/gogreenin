@@ -11,12 +11,14 @@ Rails.application.routes.draw do
   ##match 'about' => 'pages#about', :as => :about
   #match 'home' => 'pages#index', :as => :index
   get 'news' => 'pages#news'
-  get 'contact' => 'pages#contact'
   get 'blog' => 'pages#blog'
   get 'story' => 'pages#story'
   get 'goals' => 'pages#goals'
   get 'about' => 'pages#about'
   get 'home' => 'pages#index'
+
+  match '/contacts',     to: 'contacts#new',             via: 'get'
+  resources "contacts", only: [:new, :create]
 
   root :to => 'pages#index'
 

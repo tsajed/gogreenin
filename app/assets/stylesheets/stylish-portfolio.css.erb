@@ -241,9 +241,13 @@ hr.small {
   background-color: #4CC552;
 }
 
-.bg-soft-blue {
-  color: #fff;
-  background-color: #7AC8FF;
+.bg-soft {
+  color: #ffffff;
+  background: url(<%= asset_path 'bg3.png' %>) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
 
 
@@ -251,4 +255,36 @@ hr.small {
 
 footer {
     padding: 100px 0;
+}
+
+/*flash*/
+
+.hidden { display: none; }
+
+.alert-error {
+  background-color: #f2dede;
+  border-color: #eed3d7;
+  color: #b94a48;
+  text-align: left;
+}
+
+.alert-alert {
+  background-color: #f2dede;
+  border-color: #eed3d7;
+  color: #b94a48;
+  text-align: left;
+}
+
+.alert-success {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #468847;
+  text-align: left;
+}
+
+.alert-notice {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #468847;
+  text-align: left;
 }

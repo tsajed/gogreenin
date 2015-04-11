@@ -34,10 +34,7 @@
             <li class="sidebar-brand">
                 <a href="home">GoGreenIn</a>
             </li>
-            <li>
-                <a href="#menu">Blog</a>
-            </li>
-            <li>
+           <li>
                 <a href="about">Who We Are</a>
             </li>
             <li>
@@ -53,7 +50,10 @@
                 <a href="news">News</a>
             </li>
             <li>
-                <a href="contacts">Contact</a>
+                <a href="blog">Blog</a>
+            </li>
+            <li>
+                <a href="/contacts">Contact</a>
             </li>
         </ul>
     </nav>
@@ -61,10 +61,10 @@
     <!-- Header -->
     <header id="top" class="header">
         <div class="text-vertical-center">
-            <h1>Blog</h1>
+            <h1>Contact Us</h1>
             <h3>Go Green Initiative Foundation</h3>
             <br>
-            <a href="#menu" class="btn btn-dark btn-lg">Find Out Our Story</a>
+            <a href="#contact" class="btn btn-dark btn-lg">Find Out More</a>
         </div>
     </header>
 
@@ -73,12 +73,56 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>Go Green initiative Foundation is a nonprofit youth organization that empowers groups through mentorship and social innovation to become changemakers, engaging them in active citizenship  </h2>
-                    <p class="lead"></p>
+                    <p class="lead">Please Donate generously</p>
                 </div>
             </div>
             <!-- /.row -->
         </div>
         <!-- /.container -->
+    </section>
+
+    <section id="contact" class="about bg-soft">
+      <div class="container">
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <hr>
+                    <h2 class="intro-text text-center">Contact
+                        form
+                    </h2>
+                    <hr>
+                    <p>Please use the following form to submit any questions or concerns</p>
+                    <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
+                      <div class="row">
+                        <div class="col-lg-6">
+                          Name
+                          <%= f.input :name, :required => true, label: '', input_html: { class: 'form-control' } %>
+                        </div>
+                        <div class="col-lg-6">
+                          Email Address
+                          <%= f.input :email, :required => true, label: '', input_html: { class: 'form-control' } %>
+                        </div>
+                        <div class="clearfix"></div>
+                        <br>
+                        <div class="col-lg-12">
+                          Message
+                            <%= f.input :message, :as => :text, :required => true, label: '', input_html: { class: 'form-control' } %>
+                        </div>
+                        <div class= "hidden">
+                          <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+                        </div>
+                        <div class="col-lg-12">
+                          </br>
+                          <%= f.button :submit, 'Send message', :class=> "btn btn-primary" %>
+                        </div>
+                      </div>
+                    <% end %>
+                    </form>
+                </div>
+            </div>
+        </div>
+      </div>
+      <hr>
     </section>
 
     <footer>
@@ -163,4 +207,3 @@
 
 </body>
 
-</html>
