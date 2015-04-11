@@ -58,16 +58,18 @@
         </ul>
     </nav>
 
-    <div>
-      <% flash.each do |key, value| %>
-        <div>
-          <a href="#" data-dismiss="alert">×</a>
-            <%= value %>
-        </div>
-      <% end %>
-      <br>
+    <section id="contact" class="about bg-soft">
+      <div class="container">
+        <% flash.each do |key, value| %>
+          <div>
+            <a href="#" data-dismiss="alert">×</a>
+              <h3><%= value %></h3>
+          </div>
+        <% end %>
+        <br>
 
-      <a href="contacts" class="btn btn-dark btn-lg">Go Bank</a>
+        <a href="contacts" class="btn btn-dark btn-lg">Go Back</a>
+      </div>
 
     </div>
 
