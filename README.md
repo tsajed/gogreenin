@@ -1,4 +1,4 @@
-# GoGreen Inc.
+# GoGreen Initiative
 
 A web application for NGO that is concerned with making environment, education and health care more sustainable in Bangladesh. Used Ruby on Rails as a framework and worked on sprockets rails, scss and coffee rails.
 
